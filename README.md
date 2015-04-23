@@ -6,7 +6,7 @@ Data group led by S.Mallat at ENS; the second part of the project consists of si
 
 Contact: shuyu.dong at telecom-paristech dot fr
 
-Directories included in the toolbox
+Directories included in this project
 -----------------------------------
 
 `dbs/`   - a directory that contains databases output by feature_extraction.
