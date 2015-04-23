@@ -15,18 +15,15 @@ Directories included in the toolbox
 
 `report/`
 
-I. Feature extraction
 
-Setup
+I. Feature extraction
 -----
 1. load `feature_extraction/` in Matlab
 2. run `mdi0.m`, this requires parallel pools of the Matlab version and may take some time (within 14 mins for training/validation and test sets extraction in total). The output `.mat` files will be stored in `dbs/` ready for use of python scripts such as `main0.py`.
 3. Notice: in `mdi0.m`, we will need to extract features with two different fashions, choose `ch=0` and then `ch=1` to have both versions of features stored in `dbs/`.
 
 
-II. Classification
-
-Example 1: run classification with raw feature matrices in `dbs/`
+II. Classification - Example 1: run classification with raw feature matrices in `dbs/`
 ---------------------
 1. In `main0.py`, choose the parameter `ch=1` to use "squeezed" features of dimension 10178x67 or `ch=0` to use "stacked" features of dimension 10178x402.
 2. run `main0.py`
