@@ -30,7 +30,10 @@ Example 1: run classification with raw feature matrices in `dbs/`
 1. In `main0.py`, choose the parameter `ch=1` to use "squeezed" features of dimension 10178x67 or `ch=0` to use "stacked" features of dimension 10178x402.
 2. run `main0.py`
 
-Example 2: run dimensionality reduction before  classification  feature matrices in `dbs/`
+Example 2: run dimensionality reduction over feature matrices in `dbs/` before classification
 ---------------------
 1. same choice for features
 2. run `main_pcasvm.py` to get new submission text files.
+
+The classification results are reported in the `report/`
+
