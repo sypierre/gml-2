@@ -13,7 +13,7 @@ Directories included in the toolbox
 
 `feature_extraction/`  - A matlab implementation for extracting and constructing databases that contain features based on scattering tarnsform.
 
-`report/`
+`report/` - Report file
 
 
 I. Feature extraction
