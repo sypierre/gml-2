@@ -20,7 +20,7 @@ I. Feature extraction
 -----
 1. add original EEG data `data_challenge.mat` in `feature_extraction/`  
 2. load `feature_extraction/` in Matlab
-3. run `mdi0.m`, this requires parallel pools of the Matlab version and may take some time (within 14 mins for training/validation and test sets extraction in total). The output `.mat` files will be stored in `dbs/` ready for use of python scripts such as `main0.py`.
+3. run `mdi0.m`, the extraction will finish within 14 mins for training/validation and test sets extraction in total (this requires functioning parallel pools of Matlab). The output `.mat` files will be stored in `dbs/` to be ready for use of python scripts such as `main0.py`.
 4. Notice: in `mdi0.m`, we will need to extract features with two different fashions, choose `ch=0` and then `ch=1` to have both versions of features stored in `dbs/`.
 
 
