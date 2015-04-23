@@ -21,14 +21,14 @@ I. Feature extraction
 1. add original EEG data `data_challenge.mat` in `feature_extraction/`  
 2. load `feature_extraction/` in Matlab
 3. run `mdi0.m`, the extraction will finish within 14 mins for training/validation and test sets extraction in total (this requires functioning parallel pools of Matlab). The output `.mat` files will be stored in `dbs/` to be ready for use of python scripts such as `main0.py`.
-4. Notice: in `mdi0.m`, we will need to extract features with two different fashions, choose `ch=0` and then `ch=1` to have both versions of features stored in `dbs/`.
+4. Notice: in `mdi0.m`, we will need to extract features with two different fashions, choose `ch=choice[0]` and then `ch=choice[1]` to have both versions of features stored in `dbs/`.
 
 
 II. Classification
 ----------------------------
 Example 1: run classification with raw feature matrices in `dbs/`
 ---------------------
-1. In `main0.py`, choose the parameter `ch=1` to use "squeezed" features of dimension 10178x67 or `ch=0` to use "stacked" features of dimension 10178x402.
+1. In `main0.py`, choose the parameter `ch=choice[1]` to use "squeezed" features of dimension 10178x67 or `ch=choice[0]` to use "stacked" features of dimension 10178x402.
 2. run `main0.py`
 
 Example 2: run dimensionality reduction over feature matrices in `dbs/` before classification
